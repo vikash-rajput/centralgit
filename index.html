@@ -1,110 +1,117 @@
+<!DOCTYPE html>
+
 <html>
+
 <head>
-    <style>
-        body{
-   font-size:20px;
-            color: white;
-            background-size: cover;
-        }
-         .box{ width: 900px;
-       float:right;
-       border:1px solid none;}
-       .box ul li{
-           width: 120px;
-           float:left;
-           margin: 10px auto;
-           text-align: center;
-       }
- .mainmenu
-.mainmenu a
-.mainmenu a:hover
-.mainmenu img{
-position: fixed;
-z-index: -1;
-top:0px; left:0px; width:100%; height: 100vh;
-opacity: 0.9;
-/*object-fit:cover;*/
-transition: all ease 0.5s;
-}
-   .wd{
-           width: 300px;
-           height: 539px;
-           background-color: black;
-           opacity: 0.8;
-           padding: 55px;
-       }
-       .wd h1{
-           text-align: center;
-           text-transform: uppercase;
-           font-weight: 300px;
-       }
-       .wd h4{
-           text-align: justify;
-           color:darkgray;
-           font-weight: 100px;
-       }
-       .wd h2{
-           text-align: center;
-           text-transform: uppercase;
-           font-weight: normal;
-           margin: 40px auto;
-       }
-       .opt form , input[type="button"]{
-           background-color: black;
-           color:white;
-         /* padding:10px;*/
-           margin:-14px auto;
-           padding-left: 50px;
-           padding-right: 50px;
-           text-align: center;
-           font-size: 16px;
-       }
-     form, input[type="button"] {
-       animation: glowing 300ms infinite;
-       font-weight: 500%;
-      }
-      @keyframes glowing {
- 0% {
-   background-color: red;
- }
- 50% {
-   background-color: orange;
- }
- 100% {
-   background-color: blue;
- }
-}
-   </style>
+	<title>
+		Simple web Development Template
+	</title>
 </head>
+
 <body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-<script>
-$(function(){
-var image = $(".mainmenu").find('img').attr('src');
-$(".mainmenu a").mouseover(function(){
-var newimg = $(this).attr('data-image');
-$(this).parent().find('img').attr("src", newimg);
-});
-});
-</script>
-   <div class="box">
-<div class="mainmenu">
-<img src="food.png">
-<a data-image = "food.png" href=""> Home</a>
-<a data-image = "menucard.jpg" href=""> Menu</a>
-<a href=""> FAQ</a>
-<a href=""> Contact</a>
-</div>
-   </div>
-   <div class="wd">
-<h1> Welcome to Ayush World</h1>
-<h4> <i>Order delicious food online, 100% quality, safety and taste assured.</i></h4>
-<h2> Call 8126011860 for reservations</h2>
-<div class="opt">
-<form action="" method="post">
-<input type="button" value="ORDER NOW">
-</form>
-</div>
-</div>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src="logo.png">
+			</div>
+			<li><a href="#web">Web Technology</a></li>
+			<li><a href="#program">C Programming</a></li>
+			<li><a href="#course">Courses</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web">
+					Web Technology
+				</h1>
+				
+				<p class="text-small">
+					HTML stands for HyperText Markup
+					Language. It is used to design
+					web pages using a markup language.
+					HTML is the combination of Hypertext
+					and Markup language. Hypertext
+					defines the link between the web
+					pages. A markup language is used
+					to define the text document within
+					tag which defines the structure of
+					web pages. HTML is a markup language
+					that is used by the browser to
+					manipulate text, images, and other
+					content to display it in the required
+					format.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="secondHalf">
+				<h1 class="text-big" id="program">
+					C Programming
+				</h1>
+				<p class="text-small">
+					C is a procedural programming language.
+					It was initially developed by Dennis
+					Ritchie as a system programming
+					language to write operating system.
+					The main features of C language include
+					low-level access to memory, simple set
+					of keywords, and clean style, these
+					features make C language suitable for
+					system programming like operating system
+					or compiler development.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Java</h1>
+
+			<p class="sectionSubTag text-small">
+				Java has been one of the most
+				popular programming language
+				for many years. Java is Object
+				Oriented. However it is not
+				considered as pure object oriented
+				as it provides support for primitive
+				data types (like int, char, etc) The
+				Java codes are first compiled into byte
+				code (machine independent code). Then
+				the byte code is run on Java Virtual
+				Machine (JVM) regardless of the
+				underlying architecture.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src="img.png" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
 </body>
+
 </html>
